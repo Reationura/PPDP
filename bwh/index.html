@@ -60,24 +60,22 @@
 </head>
 <body>
     <div class="card">
-        <h1>⚡ 插件下载</h1>
-        <div class="version">BedWarsHeypixel 插件</div>
-        <button class="btn" onclick="downloadPlugin()">📥 点击立即下载</button>
-        <div class="note">点击后自动下载，无需额外操作，此为防机器人页面</div>
+        <h1>BedWarsHeyPixel 下载</h1>
+        <div class="version"></div>
+        <button class="btn" onclick="downloadPlugin()">DownLoad</button>
+        <div class="note">此为防机器人页面</div>
     </div>
 
     <script>
         function downloadPlugin() {
-            const fileUrl = '/bwh/BedWarsHeyPixel-v26.11.jar';
+            const fileUrl = '/bwh/BedWarsHeyPixel-v26.11-A.jar';
             const link = document.createElement('a');
             link.href = fileUrl;
-            link.download = 'BedWarsHeyPixel-v26.11.jar';
+            link.download = 'BedWarsHeyPixel-v26.11-A.jar';
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
         }
-
-        // 额外小防护：禁用右键菜单，防止误点“另存为”导致格式错误
         document.addEventListener('contextmenu', e => e.preventDefault());
     </script>
 </body>
